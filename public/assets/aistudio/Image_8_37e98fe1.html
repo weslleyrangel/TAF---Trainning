@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Novo Exercício - TAF Tracker</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-dim": "#d9dadc",
+            "surface-container": "#edeef0",
+            "secondary-fixed-dim": "#bdc7d8",
+            "primary": "#000000",
+            "tertiary": "#000000",
+            "on-secondary": "#ffffff",
+            "on-error": "#ffffff",
+            "on-primary-container": "#7d8497",
+            "on-tertiary-fixed-variant": "#005049",
+            "surface-container-low": "#f3f4f6",
+            "on-tertiary-fixed": "#00201d",
+            "inverse-primary": "#c0c6db",
+            "tertiary-fixed-dim": "#6bd8cb",
+            "on-secondary-container": "#596372",
+            "tertiary-container": "#00201d",
+            "primary-fixed-dim": "#c0c6db",
+            "surface": "#f8f9fb",
+            "inverse-surface": "#2e3132",
+            "on-surface-variant": "#45464c",
+            "tertiary-fixed": "#89f5e7",
+            "error": "#ba1a1a",
+            "surface-container-highest": "#e1e2e4",
+            "on-primary-fixed-variant": "#404758",
+            "secondary": "#555f6d",
+            "background": "#f8f9fb",
+            "on-secondary-fixed": "#121c28",
+            "secondary-fixed": "#d9e3f4",
+            "on-tertiary-container": "#0c9488",
+            "on-surface": "#191c1e",
+            "surface-container-high": "#e7e8ea",
+            "on-primary-fixed": "#141b2b",
+            "outline": "#76777d",
+            "surface-variant": "#e1e2e4",
+            "on-secondary-fixed-variant": "#3e4755",
+            "secondary-container": "#d6e0f1",
+            "surface-tint": "#575e70",
+            "inverse-on-surface": "#f0f1f3",
+            "primary-container": "#141b2b",
+            "on-error-container": "#93000a",
+            "on-background": "#191c1e",
+            "on-primary": "#ffffff",
+            "primary-fixed": "#dce2f7",
+            "on-tertiary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "surface-bright": "#f8f9fb",
+            "error-container": "#ffdad6",
+            "outline-variant": "#c6c6cd"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-sm": "0.5rem",
+            "gutter-mobile": "0.75rem",
+            "space-md": "1rem",
+            "margin-mobile": "1rem",
+            "space-xl": "2rem",
+            "gutter": "1rem",
+            "space-lg": "1.5rem",
+            "space-xs": "0.25rem",
+            "margin": "1.5rem"
+          },
+          "fontFamily": {
+            "headline-lg": ["Inter"],
+            "body-sm": ["Inter"],
+            "numeric-metric": ["Inter"],
+            "display-lg": ["Inter"],
+            "label-md": ["Inter"],
+            "headline-md": ["Inter"],
+            "body-lg": ["Inter"],
+            "headline-sm": ["Inter"],
+            "label-sm": ["Inter"],
+            "body-md": ["Inter"],
+            "display-lg-mobile": ["Inter"]
+          },
+          "fontSize": {
+            "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "numeric-metric": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "600" }],
+            "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "600" }],
+            "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "display-lg-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.025em", "fontWeight": "600" }]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      text-transform: none;
+      letter-spacing: normal;
+      word-wrap: normal;
+      white-space: nowrap;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+    }
+    body {
+      background-color: #f4f5f7;
+      color: #191c1e;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .custom-shadow {
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-low min-h-screen flex justify-center selection:bg-primary selection:text-on-primary">
+<!-- Mobile Viewport Shell (Max ~390px / 420px for iOS modal container) -->
+<div class="w-full max-w-[420px] bg-surface-container-low min-h-screen relative flex flex-col pb-36">
+<!-- Top Grab Handle (iOS Modal Spec) -->
+<div class="w-full pt-3 pb-1 flex justify-center items-center sticky top-0 z-50 bg-surface-container-low/95 backdrop-blur-sm">
+<div class="w-9 h-1 bg-outline-variant/60 rounded-full"></div>
+</div>
+<!-- Header / Top Navigation Bar (Shared Component Reference - Modal Header) -->
+<header class="flex items-center justify-between px-margin-mobile py-space-sm z-40 bg-surface-container-low">
+<!-- Leading Close Button -->
+<button aria-label="Fechar modal" class="w-9 h-9 rounded-full bg-surface-container-lowest border border-surface-container-highest flex items-center justify-center text-primary shadow-sm hover:opacity-80 active:scale-95 transition-all duration-150">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+<!-- Center Title and Subtitle -->
+<div class="flex flex-col items-center text-center">
+<h1 class="text-headline-sm font-headline-sm text-primary font-bold tracking-tight">Novo Exercício</h1>
+<p class="text-body-sm font-body-sm text-secondary">Adicionar à rotina de treino</p>
+</div>
+<!-- Trailing Action Text Button (From TopAppBar Shared Component) -->
+<button class="text-label-md font-label-md font-semibold text-primary hover:opacity-80 active:scale-95 transition-all duration-150 px-2 py-1">
+        Save
+      </button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 px-margin-mobile space-y-space-md pt-space-xs">
+<!-- Card 1: Nome do Exercício -->
+<section class="bg-surface-container-lowest rounded-[24px] p-space-lg custom-shadow border border-surface-container-highest/60">
+<label class="block text-label-sm font-label-sm font-bold text-secondary uppercase tracking-wider mb-space-sm" for="exercise-name">
+          NOME DO EXERCÍCIO
+        </label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border border-surface-container-highest rounded-full px-space-md py-3 text-body-md font-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all" id="exercise-name" placeholder="Ex: Flexão de Braço, Barra Fixa, Corrida..." type="text" value="Flexão de Braço (TAF Padrão)"/>
+</div>
+<!-- Recommendation Chips -->
+<div class="mt-space-md pt-space-xs">
+<span class="text-body-sm font-body-sm text-secondary block mb-space-xs font-medium">Sugestões comuns:</span>
+<div class="flex flex-wrap gap-1.5">
+<button class="px-3 py-1 bg-surface-container-low text-primary text-body-sm font-body-sm rounded-full border border-surface-container-highest hover:bg-surface-dim active:scale-95 transition-all" type="button">
+              Flexão
+            </button>
+<button class="px-3 py-1 bg-surface-container-low text-primary text-body-sm font-body-sm rounded-full border border-surface-container-highest hover:bg-surface-dim active:scale-95 transition-all" type="button">
+              Barra Fixa
+            </button>
+<button class="px-3 py-1 bg-surface-container-low text-primary text-body-sm font-body-sm rounded-full border border-surface-container-highest hover:bg-surface-dim active:scale-95 transition-all" type="button">
+              Abdominal
+            </button>
+<button class="px-3 py-1 bg-surface-container-low text-primary text-body-sm font-body-sm rounded-full border border-surface-container-highest hover:bg-surface-dim active:scale-95 transition-all" type="button">
+              Corrida 12 min
+            </button>
+</div>
+</div>
+</section>
+<!-- Card 2: Tipo de Medição -->
+<section class="bg-surface-container-lowest rounded-[24px] p-space-lg custom-shadow border border-surface-container-highest/60">
+<h2 class="text-label-sm font-label-sm font-bold text-secondary uppercase tracking-wider mb-space-sm">
+          TIPO DE MEDIÇÃO
+        </h2>
+<!-- Segmented Pills Selector -->
+<div class="grid grid-cols-3 gap-1.5 p-1 bg-surface-container-low rounded-full border border-surface-container-highest">
+<!-- Option 1: Selected -->
+<button class="py-2.5 px-1 bg-primary text-on-primary rounded-full text-label-md font-label-md font-semibold text-center shadow-sm active:scale-95 transition-all" type="button">
+            Repetições
+          </button>
+<!-- Option 2: Unselected -->
+<button class="py-2.5 px-1 bg-transparent text-secondary hover:text-primary rounded-full text-label-md font-label-md font-medium text-center active:scale-95 transition-all" type="button">
+            Tempo / Iso
+          </button>
+<!-- Option 3: Unselected -->
+<button class="py-2.5 px-1 bg-transparent text-secondary hover:text-primary rounded-full text-label-md font-label-md font-medium text-center active:scale-95 transition-all" type="button">
+            Distância
+          </button>
+</div>
+</section>
+<!-- Card 3: Meta Padrão por Sessão -->
+<section class="bg-surface-container-lowest rounded-[24px] p-space-lg custom-shadow border border-surface-container-highest/60">
+<h2 class="text-label-sm font-label-sm font-bold text-secondary uppercase tracking-wider mb-space-md">
+          META PADRÃO POR SESSÃO
+        </h2>
+<div class="grid grid-cols-2 gap-space-md divide-x divide-surface-container-highest">
+<!-- Left Column: Séries -->
+<div class="flex flex-col items-center pr-2">
+<span class="text-label-sm font-label-sm font-semibold text-secondary tracking-wide uppercase mb-1">SÉRIES</span>
+<div class="flex items-center gap-3 my-1">
+<button class="w-8 h-8 rounded-full border border-surface-container-highest flex items-center justify-center text-primary bg-surface-container-lowest hover:bg-surface-container-low active:scale-90 transition-all shadow-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="text-numeric-metric font-numeric-metric text-primary font-bold tracking-tight">3</span>
+<button class="w-8 h-8 rounded-full border border-surface-container-highest flex items-center justify-center text-primary bg-surface-container-lowest hover:bg-surface-container-low active:scale-90 transition-all shadow-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<span class="text-body-sm font-body-sm text-secondary mt-1">Sessões TAF</span>
+</div>
+<!-- Right Column: Repetições -->
+<div class="flex flex-col items-center pl-2">
+<span class="text-label-sm font-label-sm font-semibold text-secondary tracking-wide uppercase mb-1">REPETIÇÕES</span>
+<div class="flex items-center gap-3 my-1">
+<button class="w-8 h-8 rounded-full border border-surface-container-highest flex items-center justify-center text-primary bg-surface-container-lowest hover:bg-surface-container-low active:scale-90 transition-all shadow-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<span class="text-numeric-metric font-numeric-metric text-primary font-bold tracking-tight">8</span>
+<button class="w-8 h-8 rounded-full border border-surface-container-highest flex items-center justify-center text-primary bg-surface-container-lowest hover:bg-surface-container-low active:scale-90 transition-all shadow-xs" type="button">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+</div>
+<span class="text-body-sm font-body-sm text-secondary mt-1">Por série</span>
+</div>
+</div>
+</section>
+<!-- Card 4: Descanso entre Séries -->
+<section class="bg-surface-container-lowest rounded-[24px] p-space-lg custom-shadow border border-surface-container-highest/60">
+<div class="flex items-center gap-2 mb-space-md">
+<span class="material-symbols-outlined text-secondary text-[18px]">timer</span>
+<h2 class="text-label-sm font-label-sm font-bold text-secondary uppercase tracking-wider">
+            DESCANSO ENTRE SÉRIES
+          </h2>
+</div>
+<!-- Interval Pills -->
+<div class="grid grid-cols-5 gap-1.5">
+<button class="py-2 rounded-full border border-surface-container-highest text-secondary text-label-md font-label-md text-center hover:bg-surface-container-low active:scale-95 transition-all" type="button">
+            30s
+          </button>
+<button class="py-2 rounded-full border border-surface-container-highest text-secondary text-label-md font-label-md text-center hover:bg-surface-container-low active:scale-95 transition-all" type="button">
+            45s
+          </button>
+<!-- Selected State -->
+<button class="py-2 rounded-full bg-primary text-on-primary text-label-md font-label-md font-bold text-center shadow-xs active:scale-95 transition-all" type="button">
+            60s
+          </button>
+<button class="py-2 rounded-full border border-surface-container-highest text-secondary text-label-md font-label-md text-center hover:bg-surface-container-low active:scale-95 transition-all" type="button">
+            90s
+          </button>
+<button class="py-2 rounded-full border border-surface-container-highest text-secondary text-label-md font-label-md text-center hover:bg-surface-container-low active:scale-95 transition-all" type="button">
+            120s
+          </button>
+</div>
+<p class="text-body-sm font-body-sm text-secondary mt-space-sm flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary inline-block"></span>
+          Intervalo sugerido para recuperação metabólica no TAF.
+        </p>
+</section>
+<!-- Card 5: Categoria do Teste (TAF) -->
+<section class="bg-surface-container-lowest rounded-[24px] p-space-lg custom-shadow border border-surface-container-highest/60">
+<h2 class="text-label-sm font-label-sm font-bold text-secondary uppercase tracking-wider mb-space-sm">
+          CATEGORIA DO TESTE (TAF)
+        </h2>
+<div class="flex flex-wrap gap-2">
+<!-- Active Category Tag -->
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-primary text-on-primary text-label-md font-label-md font-semibold active:scale-95 transition-all shadow-xs" type="button">
+<span class="material-symbols-outlined text-[16px] leading-none">check</span>
+            Membros Superiores
+          </button>
+<!-- Inactive Category Tag -->
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-surface-container-highest text-primary bg-surface-container-lowest text-label-md font-label-md hover:bg-surface-container-low active:scale-95 transition-all" type="button">
+            Core / Abdômen
+          </button>
+<!-- Inactive Category Tag -->
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full border border-surface-container-highest text-primary bg-surface-container-lowest text-label-md font-label-md hover:bg-surface-container-low active:scale-95 transition-all" type="button">
+            Resistência Aeróbica
+          </button>
+</div>
+</section>
+</main>
+<!-- Bottom Fixed Action Bar -->
+<footer class="fixed bottom-0 left-0 right-0 max-w-[420px] mx-auto z-50 px-margin-mobile pt-3 pb-6 bg-surface-container-lowest/90 backdrop-blur-md">
+<div class="flex flex-col gap-2">
+<!-- Primary Action Button -->
+<button class="w-full h-12 bg-primary text-on-primary rounded-full font-label-md text-label-md font-bold tracking-tight hover:opacity-90 active:scale-[0.98] transition-all flex items-center justify-center shadow-md" type="button">
+          Salvar Exercício
+        </button>
+<!-- Secondary Dismiss Action -->
+<button class="w-full py-2 text-center text-body-sm font-body-sm font-medium text-secondary hover:text-primary active:scale-95 transition-all" type="button">
+          Descartar
+        </button>
+</div>
+</footer>
+</div>
+</body></html>

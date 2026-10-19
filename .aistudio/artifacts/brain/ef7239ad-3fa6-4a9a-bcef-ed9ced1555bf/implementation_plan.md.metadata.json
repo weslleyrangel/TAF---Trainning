@@ -1,0 +1,6 @@
+{
+  "summary": "Plano detalhado de implementação para o aplicativo mobile offline-first TAF - Training, com arquitetura Neo-Minimal / Bento Grid (Obsidian Clean), suporte a Light/Dark Mode, rotina de treinos progressivos para o Teste de Aptidão Física (Corpo de Bombeiros Militar), temporizador com bipes sonoros sintetizados e vibração, comprovantes de atividade, e gestão local de dados (exportar/importar backup).",
+  "updatedAt": "2026-10-19T20:38:37.193144942Z",
+  "requestFeedback": true,
+  "userFacing": true
+}

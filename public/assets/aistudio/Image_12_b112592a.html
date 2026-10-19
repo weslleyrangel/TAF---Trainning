@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Flexão de Braço - Detalhes &amp; PR | TAF Tracker</title>
+<!-- Google Fonts: Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container": "#edeef0",
+            "on-secondary-fixed-variant": "#3e4755",
+            "error-container": "#ffdad6",
+            "tertiary-fixed-dim": "#6bd8cb",
+            "inverse-on-surface": "#f0f1f3",
+            "surface-container-highest": "#e1e2e4",
+            "primary-fixed": "#dce2f7",
+            "tertiary": "#000000",
+            "on-tertiary-fixed": "#00201d",
+            "on-secondary-fixed": "#121c28",
+            "primary-container": "#141b2b",
+            "surface-dim": "#d9dadc",
+            "on-error": "#ffffff",
+            "on-secondary": "#ffffff",
+            "surface-container-high": "#e7e8ea",
+            "on-tertiary-container": "#0c9488",
+            "surface-container-low": "#f3f4f6",
+            "surface-variant": "#e1e2e4",
+            "secondary-container": "#d6e0f1",
+            "on-surface-variant": "#45464c",
+            "outline": "#76777d",
+            "on-primary-container": "#7d8497",
+            "tertiary-fixed": "#89f5e7",
+            "error": "#ba1a1a",
+            "outline-variant": "#c6c6cd",
+            "on-tertiary-fixed-variant": "#005049",
+            "tertiary-container": "#00201d",
+            "inverse-primary": "#c0c6db",
+            "primary": "#000000",
+            "on-primary": "#ffffff",
+            "secondary-fixed-dim": "#bdc7d8",
+            "on-background": "#191c1e",
+            "inverse-surface": "#2e3132",
+            "on-secondary-container": "#596372",
+            "surface-container-lowest": "#ffffff",
+            "surface-tint": "#575e70",
+            "secondary": "#555f6d",
+            "background": "#f8f9fb",
+            "on-tertiary": "#ffffff",
+            "on-primary-fixed": "#141b2b",
+            "primary-fixed-dim": "#c0c6db",
+            "secondary-fixed": "#d9e3f4",
+            "on-error-container": "#93000a",
+            "surface-bright": "#f8f9fb",
+            "on-surface": "#191c1e",
+            "surface": "#f8f9fb",
+            "on-primary-fixed-variant": "#404758"
+          },
+          "borderRadius": {
+            "DEFAULT": "1rem",
+            "lg": "2rem",
+            "xl": "3rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "gutter-mobile": "0.75rem",
+            "margin-mobile": "1rem",
+            "margin": "1.5rem",
+            "space-md": "1rem",
+            "space-lg": "1.5rem",
+            "gutter": "1rem",
+            "space-xs": "0.25rem",
+            "space-sm": "0.5rem",
+            "space-xl": "2rem"
+          },
+          "fontFamily": {
+            "display-lg-mobile": ["Inter"],
+            "display-lg": ["Inter"],
+            "headline-md": ["Inter"],
+            "headline-lg": ["Inter"],
+            "numeric-metric": ["Inter"],
+            "label-md": ["Inter"],
+            "label-sm": ["Inter"],
+            "body-lg": ["Inter"],
+            "headline-sm": ["Inter"],
+            "body-sm": ["Inter"],
+            "body-md": ["Inter"]
+          },
+          "fontSize": {
+            "display-lg-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.025em", "fontWeight": "600" }],
+            "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.03em", "fontWeight": "600" }],
+            "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.02em", "fontWeight": "600" }],
+            "numeric-metric": ["36px", { "lineHeight": "40px", "letterSpacing": "-0.03em", "fontWeight": "600" }],
+            "label-md": ["13px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }],
+            "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.005em", "fontWeight": "400" }],
+            "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill {
+      font-variation-settings: 'FILL' 1, 'wght' 500;
+    }
+    /* Subtle hairline & elevation tokens matching Design System */
+    .card-border-subtle {
+      border: 1px solid #E5E7EB;
+      box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.04);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface antialiased min-h-screen flex justify-center selection:bg-primary selection:text-on-primary">
+<!-- Mobile Viewport Shell (Max 440px iOS frame container) -->
+<div class="w-full max-w-md min-h-screen flex flex-col bg-surface pb-36 relative">
+<!-- Top Navigation Header (Task-focused context: Back + Title + Action) -->
+<header class="sticky top-0 z-40 bg-surface/90 backdrop-blur-md px-margin-mobile py-space-sm flex items-center justify-between">
+<!-- Back Circular Button -->
+<button aria-label="Voltar" class="w-10 h-10 rounded-full bg-surface-container-lowest card-border-subtle flex items-center justify-center text-primary active:scale-95 transition-transform duration-150" type="button">
+<span class="material-symbols-outlined text-[20px]" data-icon="arrow_back">arrow_back</span>
+</button>
+<!-- Center Title & Subtitle -->
+<div class="flex flex-col items-center text-center px-space-xs">
+<h1 class="font-headline-sm text-headline-sm text-primary tracking-tight font-semibold">
+          Flexão de Braço
+        </h1>
+<p class="font-label-sm text-label-sm text-secondary tracking-normal mt-0.5">
+          Membros Superiores • TAF Padrão
+        </p>
+</div>
+<!-- Action Edit Button -->
+<button aria-label="Editar Exercício" class="w-10 h-10 rounded-full bg-surface-container-lowest card-border-subtle flex items-center justify-center text-primary active:scale-95 transition-transform duration-150" type="button">
+<span class="material-symbols-outlined text-[19px]" data-icon="edit">edit</span>
+</button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 px-margin-mobile flex flex-col gap-space-md pt-space-xs">
+<!-- Hero PR Card -->
+<section class="w-full bg-surface-container-lowest rounded-[24px] card-border-subtle p-space-lg relative overflow-hidden flex flex-col justify-between">
+<!-- Star Background watermark accent -->
+<div class="absolute -right-4 -top-6 text-surface-container-low pointer-events-none select-none opacity-40">
+<span class="material-symbols-outlined text-[130px] fill" data-icon="military_tech">military_tech</span>
+</div>
+<div>
+<!-- Badge / PR Label -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container-low border border-outline-variant/30 text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-primary fill" data-icon="emoji_events">emoji_events</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-semibold">
+              RECORDE PESSOAL (PR)
+            </span>
+</div>
+<!-- Numeric Hero Metric -->
+<div class="mt-space-md flex items-baseline gap-2">
+<span class="font-display-lg text-display-lg font-bold text-primary tracking-tight leading-none">
+              18
+            </span>
+<span class="font-headline-md text-headline-md text-secondary font-medium">
+              reps
+            </span>
+</div>
+</div>
+<!-- PR Context Details & Comparison Pill -->
+<div class="mt-space-lg pt-space-md border-t border-surface-container flex flex-wrap items-center justify-between gap-2">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]" data-icon="history">history</span>
+<span class="font-body-sm text-body-sm text-secondary">
+              Alcançado há 3 dias • 21 de Outubro
+            </span>
+</div>
+<!-- Positive Delta Pill Tag -->
+<div class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-fixed/30 border border-on-tertiary-container/20">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">
+              +4 reps vs mês anterior
+            </span>
+</div>
+</div>
+</section>
+<!-- Mini Bento Grid (2 Columns) -->
+<section class="grid grid-cols-2 gap-space-sm">
+<!-- Left Bento: Volume Total -->
+<div class="bg-surface-container-lowest rounded-[24px] card-border-subtle p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">
+                Volume Total
+              </span>
+<div class="w-7 h-7 rounded-full bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]" data-icon="repeat">repeat</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<span class="font-numeric-metric text-numeric-metric font-semibold text-primary block tracking-tight">
+                142 <span class="font-body-md text-body-md font-normal text-secondary">reps</span>
+</span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-surface-container-low">
+<p class="font-body-sm text-body-sm text-secondary">
+              Neste mês de Outubro
+            </p>
+</div>
+</div>
+<!-- Right Bento: Evolução Mensal -->
+<div class="bg-surface-container-lowest rounded-[24px] card-border-subtle p-space-md flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">
+                Evolução Mensal
+              </span>
+<div class="w-7 h-7 rounded-full bg-tertiary-fixed/30 flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[16px] fill" data-icon="trending_up">trending_up</span>
+</div>
+</div>
+<div class="mt-space-sm">
+<span class="font-numeric-metric text-numeric-metric font-semibold text-on-tertiary-container block tracking-tight">
+                +35%
+              </span>
+</div>
+</div>
+<div class="mt-space-md pt-space-xs border-t border-surface-container-low">
+<p class="font-body-sm text-body-sm text-secondary truncate">
+              Consistência progressiva
+            </p>
+</div>
+</div>
+</section>
+<!-- Target / Meta Comparison Row (Slim Card) -->
+<section class="bg-surface-container-lowest rounded-[24px] card-border-subtle p-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[14px]" data-icon="flag">flag</span>
+</div>
+<span class="font-headline-sm text-body-md font-semibold text-primary">
+              Meta Edital TAF: 24 reps
+            </span>
+</div>
+<span class="font-label-md text-label-md text-primary font-semibold">
+            75%
+          </span>
+</div>
+<!-- Sleek Thin Progress Bar -->
+<div class="w-full bg-surface-container rounded-full h-2 overflow-hidden my-2.5">
+<div class="bg-primary h-2 rounded-full transition-all duration-500 ease-out" style="width: 75%;"></div>
+</div>
+<div class="flex items-center justify-between pt-0.5">
+<p class="font-body-sm text-body-sm text-secondary">
+            Faltam 6 reps para índice máximo
+          </p>
+<span class="font-label-sm text-label-sm text-outline">
+            18 / 24
+          </span>
+</div>
+</section>
+<!-- History Section (Histórico Recente) -->
+<section class="mt-space-xs flex flex-col gap-space-sm">
+<div class="flex items-center justify-between px-0.5">
+<div>
+<h2 class="font-headline-sm text-headline-sm font-semibold text-primary">
+              Histórico de Execuções
+            </h2>
+<p class="font-body-sm text-body-sm text-secondary">
+              Últimas sessões registradas
+            </p>
+</div>
+<span class="font-label-sm text-label-sm text-secondary bg-surface-container px-2 py-0.5 rounded-full">
+            Outubro 2024
+          </span>
+</div>
+<!-- Pure White Grouped List Card -->
+<div class="bg-surface-container-lowest rounded-[24px] card-border-subtle divide-y divide-surface-container-low overflow-hidden">
+<!-- Row 1: Hoje -->
+<div class="p-space-md flex items-center justify-between hover:bg-surface transition-colors duration-150">
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col items-center justify-center w-11 h-11 rounded-full bg-primary text-on-primary">
+<span class="font-label-sm text-label-sm font-bold tracking-tight">HOJE</span>
+<span class="font-body-sm text-[10px] opacity-80 leading-none">24 Out</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">
+                  3 séries executadas
+                </span>
+<span class="font-body-sm text-body-sm text-secondary">
+                  Carga: Peso corporal
+                </span>
+</div>
+</div>
+<!-- Reps Breakdown Badges -->
+<div class="flex items-center gap-1.5">
+<span class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center font-label-md text-label-md font-semibold text-primary">8</span>
+<span class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center font-label-md text-label-md font-semibold text-primary">8</span>
+<span class="w-7 h-7 rounded-full bg-surface-container flex items-center justify-center font-label-md text-label-md font-semibold text-primary">7</span>
+</div>
+</div>
+<!-- Row 2: 16 Out -->
+<div class="p-space-md flex items-center justify-between hover:bg-surface transition-colors duration-150">
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col items-center justify-center w-11 h-11 rounded-full bg-surface-container-low text-primary border border-outline-variant/30">
+<span class="font-label-md text-label-md font-bold leading-tight">16</span>
+<span class="font-body-sm text-[10px] text-secondary leading-none uppercase">Out</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">
+                  3 séries
+                </span>
+<span class="font-body-sm text-body-sm text-secondary">
+                  RPE 8.0 • Cadência controlada
+                </span>
+</div>
+</div>
+<!-- Reps Breakdown Badges -->
+<div class="flex items-center gap-1.5">
+<span class="w-7 h-7 rounded-full bg-surface-container-low border border-surface-container flex items-center justify-center font-label-md text-label-md font-medium text-primary">7</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-low border border-surface-container flex items-center justify-center font-label-md text-label-md font-medium text-primary">7</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-low border border-surface-container flex items-center justify-center font-label-md text-label-md font-medium text-primary">6</span>
+</div>
+</div>
+<!-- Row 3: 14 Out -->
+<div class="p-space-md flex items-center justify-between hover:bg-surface transition-colors duration-150">
+<div class="flex items-center gap-space-md">
+<div class="flex flex-col items-center justify-center w-11 h-11 rounded-full bg-surface-container-low text-primary border border-outline-variant/30">
+<span class="font-label-md text-label-md font-bold leading-tight">14</span>
+<span class="font-body-sm text-[10px] text-secondary leading-none uppercase">Out</span>
+</div>
+<div class="flex flex-col">
+<span class="font-body-md text-body-md font-semibold text-primary">
+                  3 séries
+                </span>
+<span class="font-body-sm text-body-sm text-secondary">
+                  RPE 7.5 • Aquecimento dinâmico
+                </span>
+</div>
+</div>
+<!-- Reps Breakdown Badges -->
+<div class="flex items-center gap-1.5">
+<span class="w-7 h-7 rounded-full bg-surface-container-low border border-surface-container flex items-center justify-center font-label-md text-label-md font-medium text-primary">6</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-low border border-surface-container flex items-center justify-center font-label-md text-label-md font-medium text-primary">6</span>
+<span class="w-7 h-7 rounded-full bg-surface-container-low border border-surface-container flex items-center justify-center font-label-md text-label-md font-medium text-primary">6</span>
+</div>
+</div>
+<!-- Row 4: Ver histórico completo action link row -->
+<button class="w-full p-space-md flex items-center justify-between text-left hover:bg-surface transition-colors duration-150 group" type="button">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-secondary group-hover:text-primary transition-colors" data-icon="calendar_month">calendar_month</span>
+<span class="font-body-md text-body-md font-medium text-primary">
+                Ver histórico completo
+              </span>
+</div>
+<div class="flex items-center gap-1 text-secondary group-hover:text-primary transition-colors">
+<span class="font-body-sm text-body-sm">48 registros</span>
+<span class="material-symbols-outlined text-[20px]" data-icon="chevron_right">chevron_right</span>
+</div>
+</button>
+</div>
+</section>
+</main>
+<!-- Fixed Bottom Action Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-50 flex justify-center pointer-events-none">
+<div class="w-full max-w-md p-margin-mobile bg-gradient-to-t from-surface via-surface/95 to-transparent pt-6 pointer-events-auto flex flex-col items-center gap-2.5">
+<!-- Primary Action Button: Full-width Solid Black Pill -->
+<button class="w-full h-12 bg-primary text-on-primary rounded-full flex items-center justify-center gap-2 font-body-md font-semibold shadow-lg shadow-black/10 active:scale-[0.98] transition-transform duration-150 hover:opacity-95" type="button">
+<span class="material-symbols-outlined text-[20px] fill" data-icon="play_arrow">play_arrow</span>
+<span>Iniciar Treino com Este Exercício</span>
+</button>
+<!-- Secondary Action: Subtle Manual Entry Link -->
+<button class="py-1 px-3 text-secondary hover:text-primary font-body-sm text-body-sm font-medium transition-colors duration-150 flex items-center gap-1 active:scale-95" type="button">
+<span class="material-symbols-outlined text-[16px]" data-icon="add">add</span>
+<span>Registrar Série Manual</span>
+</button>
+</div>
+</div>
+</div>
+</body></html>

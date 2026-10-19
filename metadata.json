@@ -1,0 +1,6 @@
+{
+  "name": "TAF - Training",
+  "description": "Aplicativo mobile minimalista offline-first para treinos diários e preparação para Teste de Aptidão Física (TAF) do Corpo de Bombeiros Militar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
